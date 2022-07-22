@@ -1,0 +1,21 @@
+data_fname:  ./data/minnesota_0719.csv
+population:  3450000
+input_dim:  1
+output_dim:  1
+output_dir:  ./output_SIRD
+train_epoches:  100000
+eval_epoches:  2000
+gpuNumber:  0
+optimizer:  Adam
+batch_size:  16
+sample_method:  sequential_sort
+params_network:  DNN
+hidden_params:  [35, 50, 30, 30, 20]
+loss_function:  L2_loss
+input_active:  sin
+hidden_active:  sin
+initial_learning_rate:  0.002
+decay_steps:  1000
+decay_rate:  0.9
+regular_method:  L2
+regular_weight:  5e-05
